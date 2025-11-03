@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Pompom de l'ILEPS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Les Pompom de l’ILEPS</div>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#coachs">Nos coachs</a></li>
+        <li><a href="#team">Notre équipe</a></li>
+        <li><a href="#compet">Compétitions</a></li>
+        <li><a href="#inscription">Inscription</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Les Pompom de l’ILEPS</h1>
+      <p>Énergie, esprit d’équipe et passion depuis notre création.</p>
+      <a href="#inscription" class="btn">Rejoins-nous !</a>
+    </div>
+  </section>
+
+  <!-- Bande photo libre -->
+  <section class="decor">
+    <img src="img/presta1.jpg" alt="">
+  </section>
+
+  <section id="about">
+    <h2>À propos du club</h2>
+    <p>Depuis XXXX, les Pompom de l’ILEPS représentent fièrement l’Institut Libre d’Éducation Physique Supérieure. 
+       L’ILEPS forme les futurs professionnels du sport et de l’enseignement, et notre équipe de pompom incarne 
+       ses valeurs : dynamisme, esprit d’équipe et dépassement de soi.</p>
+  </section>
+
+  <!-- Bande photo libre -->
+  <section class="decor">
+    <img src="img/presta2.jpg" alt="">
+  </section>
+
+  <section id="coachs">
+    <h2>Nos coachs</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="img/coach1.jpg" alt="Coach Appolline">
+        <h3>Coach Appolline</h3>
+      </div>
+      <div class="card">
+        <img src="img/coach2.jpg" alt="Coach Mélissande">
+        <h3>Coach Mélissande</h3>
+      </div>
+      <div class="card">
+        <img src="img/coach3.jpg" alt="Coach Orlane">
+        <h3>Coach Orlane</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bande photo libre -->
+  <section class="decor">
+    <img src="img/presta3.jpg" alt="">
+  </section>
+
+  <section id="team">
+    <h2>Notre équipe</h2>
+    <div class="gallery large">
+      <img src="img/team1.jpg" alt="">
+      <img src="img/team2.jpg" alt="">
+      <img src="img/team3.jpg" alt="">
+    </div>
+  </section>
+
+  <!-- Bande photo libre -->
+  <section class="decor">
+    <img src="img/presta4.jpg" alt="">
+  </section>
+
+  <section id="compet">
+    <h2>Compétitions gagnées</h2>
+    <ul class="compet-list">
+      <li>🏆 1ère place - Championnat universitaire 2023</li>
+      <li>🥈 2ème place - Open national Cheer 2022</li>
+      <li>🏆 1ère place - Festival ILEPS 2021</li>
+    </ul>
+  </section>
+
+  <section id="inscription">
+    <h2>Nous rejoindre</h2>
+    <p>Envie de rejoindre notre équipe ? Clique ci-dessous pour en savoir plus !</p>
+    <a href="https://www.instagram.com/pompom_ileps" target="_blank" class="btn">Notre Instagram</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Les Pompom de l’ILEPS — Site vitrine officiel</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
