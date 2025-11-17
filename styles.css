@@ -90,6 +90,15 @@ section {
   display: block;
 }
 
+/* Spécifique pour l'image porte1.png (entièrement visible) */
+.full-img {
+  width: 100%;        /* L'image prend toute la largeur de son conteneur */
+  height: auto;       /* La hauteur est ajustée automatiquement pour conserver les proportions */
+  object-fit: contain; /* L'image sera redimensionnée pour être totalement visible sans être coupée */
+  display: block;     /* Supprime les espaces autour de l'image */
+  margin: 0 auto;     /* Centrer l'image */
+}
+
 /* Galeries */
 .gallery {
   display: flex;
