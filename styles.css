@@ -82,21 +82,12 @@ section {
   text-align: center;
 }
 
-/* Bandes photos libres */
+/* Bande photo libre */
 .decor img {
   width: 100%;
-  height: 350px;
-  object-fit: cover;
+  height: auto; /* La hauteur s'ajuste automatiquement pour garder les proportions de l'image */
+  object-fit: contain; /* Assure que l'image est entièrement visible sans être coupée */
   display: block;
-}
-
-/* Spécifique pour l'image porte1.png (entièrement visible) */
-.full-img {
-  width: 100%;        /* L'image prend toute la largeur de son conteneur */
-  height: auto;       /* La hauteur est ajustée automatiquement pour conserver les proportions */
-  object-fit: contain; /* L'image sera redimensionnée pour être totalement visible sans être coupée */
-  display: block;     /* Supprime les espaces autour de l'image */
-  margin: 0 auto;     /* Centrer l'image */
 }
 
 /* Galeries */
