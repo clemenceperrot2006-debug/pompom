@@ -1,201 +1,107 @@
-/* ------------------------------ */
-/*           BASE GÉNÉRALE        */
-/* ------------------------------ */
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Pompom de l'ILEPS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Les Pompom de l’ILEPS</div>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#coachs">Nos coachs</a></li>
+        <li><a href="#team">Notre équipe</a></li>
+        <li><a href="#compet">Compétitions</a></li>
+        <li><a href="#inscription">Inscription</a></li>
+      </ul>
+    </nav>
+  </header>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Les Pompom de l’ILEPS</h1>
+      <p>Énergie, esprit d’équipe et passion depuis notre création.</p>
+      <a href="#inscription" class="btn">Rejoins-nous !</a>
+    </div>
+  </section>
 
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
-  color: #222;
-  line-height: 1.6;
-  overflow-x: hidden;
-}
+  <!-- Bande photo libre -->
+  <section class="decor">
+    <img src="porte1.png" alt="Image décorative 1">
+  </section>
 
-/* ------------------------------ */
-/*           HEADER               */
-/* ------------------------------ */
+  <section id="about">
+    <h2>À propos du club</h2>
+    <p>Depuis XXXX, les Pompom de l’ILEPS représentent fièrement l’Institut Libre d’Éducation Physique Supérieure. 
+       L’ILEPS forme les futurs professionnels du sport et de l’enseignement, et notre équipe de pompom incarne 
+       ses valeurs : dynamisme, esprit d’équipe et dépassement de soi.</p>
+  </section>
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  position: sticky;
-  top: 0;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  z-index: 10;
-}
+  <!-- Bande photo libre -->
+  <section class="decor">
+    <img src="porte2.png" alt="Image décorative 2">
+  </section>
 
-.logo {
-  font-size: 1.6rem;
-  font-weight: 700;
-}
+  <section id="coachs">
+    <h2>Nos coachs</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="IMG_apo.png" alt="Coach Appolline">
+        <h3>Coach Appolline</h3>
+      </div>
+      <div class="card">
+        <img src="img_mel.png" alt="Coach Mélissande">
+        <h3>Coach Mélissande</h3>
+      </div>
+      <div class="card">
+        <img src="IMG_orlane.png" alt="Coach Orlane">
+        <h3>Coach Orlane</h3>
+      </div>
+    </div>
+  </section>
 
-nav ul {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-}
+  <!-- Bande photo libre -->
+  <section class="decor">
+    <img src="porte3.png" alt="Image décorative 3">
+  </section>
 
-nav a {
-  text-decoration: none;
-  color: #222;
-  font-weight: 500;
-  transition: 0.3s;
-}
+  <section id="team">
+    <h2>Notre équipe</h2>
+    <div class="gallery large">
+      <img src="IMG_gpe1.png" alt="Photo de groupe 1">
+      <img src="IMG_gpe2.png" alt="Photo de groupe 2">
+      <img src="IMG_gpe3.png" alt="Photo de groupe 3">
+    </div>
+  </section>
 
-nav a:hover {
-  color: #d71b5a;
-}
+  <!-- Bande photo libre -->
+  <section class="decor">
+    <img src="porte4.png" alt="Image décorative 4">
+  </section>
 
-/* ------------------------------ */
-/*            HERO                */
-/* ------------------------------ */
+  <section id="compet">
+    <h2>Compétitions gagnées</h2>
+    <ul class="compet-list">
+      <li>🏆 1ère place - Championnat universitaire 2023</li>
+      <li>🥈 2ème place - Open national Cheer 2022</li>
+      <li>🏆 1ère place - Festival ILEPS 2021</li>
+    </ul>
+  </section>
 
-#hero {
-  height: 60vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)),
-              url("porte1.png") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
+  <section id="inscription">
+    <h2>Nous rejoindre</h2>
+    <p>Envie de rejoindre notre équipe ? Clique ci-dessous pour en savoir plus !</p>
+    <a href="https://www.instagram.com/pompom_ileps" target="_blank" class="btn">Notre Instagram</a>
+  </section>
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
+  <footer>
+    <p>© 2025 Les Pompom de l’ILEPS — Site vitrine officiel</p>
+  </footer>
 
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  background-color: #d71b5a;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: #b51349;
-}
-
-/* ------------------------------ */
-/*           SECTIONS             */
-/* ------------------------------ */
-
-section {
-  padding: 60px 40px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 25px;
-}
-
-/* ------------------------------ */
-/*        BANDE DÉCORATIVE        */
-/* ------------------------------ */
-
-.decor img {
-  width: 100%;
-  max-height: 300px;
-  object-fit: contain; /* 🔥 image entière sans être coupée */
-  display: block;
-  margin: 0 auto;
-}
-
-/* ------------------------------ */
-/*       GALERIES / IMAGES        */
-/* ------------------------------ */
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.gallery img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  object-fit: contain; /* 🔥 pas de recadrage */
-  border-radius: 8px;
-}
-
-.card {
-  text-align: center;
-}
-
-.card img {
-  width: 250px;
-  height: auto;
-  object-fit: contain; /* 🔥 encore une fois : pas coupé */
-}
-
-.gallery.large img {
-  max-width: 400px;
-}
-
-/* ------------------------------ */
-/*           COMPÉTITIONS         */
-/* ------------------------------ */
-
-.compet-list {
-  list-style: none;
-  font-size: 1.2rem;
-  line-height: 2rem;
-}
-
-/* ------------------------------ */
-/*             FOOTER             */
-/* ------------------------------ */
-
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-}
-
-/* ------------------------------ */
-/*         RESPONSIVE MOBILE      */
-/* ------------------------------ */
-
-@media (max-width: 768px) {
-
-  #hero {
-    height: 40vh;
-    background-position: center;
-  }
-
-  nav ul {
-    display: none; /* simple pour éviter le menu trop large */
-  }
-
-  header {
-    justify-content: center;
-  }
-
-  .gallery img,
-  .gallery.large img,
-  .card img {
-    max-width: 90%;
-  }
-}
-
+  <script src="script.js"></script>
+</body>
+</html>
