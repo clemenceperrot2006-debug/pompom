@@ -85,29 +85,31 @@ section {
   transition: opacity 0.6s ease-out;
 }
 
-/* Apparition au scroll */
 section.visible {
   opacity: 1;
 }
 
-/* Bandes photos libres (CORRIGÉES) */
+/* --------------------------------------------------------- */
+/*       BANDES PHOTOS — VERSION FINALE FONCTIONNELLE       */
+/* --------------------------------------------------------- */
 .decor {
   width: 100%;
-  height: 350px;
-  background-color: #f3f6ff;
+  height: 350px;      /* Hauteur FIXE de la bande */
+  overflow: hidden;   /* Cache ce qui dépasse */
+  background: #f3f6ff;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
-/* CORRECTION : l'image remplit toute la hauteur */
 .decor img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;      /* Remplit totalement la bande */
-  object-position: center; /* Centre l’image */
+  height: 100%;       /* 🔥 L’image fait EXACTEMENT 350px de haut */
+  width: auto;        /* Garde les proportions */
+  object-fit: cover;  /* Remplit toute la bande */
+  object-position: center;
 }
+/* --------------------------------------------------------- */
+
 
 /* Galeries */
 .gallery {
