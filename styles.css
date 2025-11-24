@@ -90,25 +90,20 @@ section.visible {
 }
 
 /* --------------------------------------------------------- */
-/*           BANDES PHOTOS — EXACTEMENT CE QUE TU VEUX       */
+/*                     BANDES PHOTOS EN COVER                */
 /* --------------------------------------------------------- */
-
 .decor {
   width: 100%;
-  height: 350px;               /* hauteur fixe de la bande */
-  background-color: #f3f6ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: visible;           /* rien n'est coupé */
+  height: 350px;
+  overflow: hidden;              /* cache ce qui dépasse */
 }
 
 .decor img {
-  height: 100%;                /* 🔥 L’IMAGE FAIT EXACTEMENT 350px */
-  width: auto;                 /* respecte les proportions */
-  object-fit: contain;         /* 🔥 JAMAIS COUPÉE */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             /* 🔥 L’image touche haut + bas */
+  object-position: center;       /* centrée proprement */
 }
-
 /* --------------------------------------------------------- */
 
 .gallery {
@@ -121,7 +116,7 @@ section.visible {
 .gallery.large img {
   width: auto;
   height: 300px;
-  object-fit: contain;
+  object-fit: contain; 
   background-color: #f3f6ff;
   border-radius: 10px;
 }
