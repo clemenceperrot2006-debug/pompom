@@ -94,8 +94,7 @@ section.visible {
 /* --------------------------------------------------------- */
 .decor {
   width: 100%;
-  height: 350px;
-  overflow: hidden;              /* cache ce qui dépasse */
+  height: 350px;            /* cache ce qui dépasse */
 }
 
 .decor img {
