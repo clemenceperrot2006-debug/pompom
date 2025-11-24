@@ -182,7 +182,6 @@ section.visible {
   border-radius: 50px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   font-weight: 500;
-  transition: transform 0.3s;
-}
-
-.activity-cl
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
