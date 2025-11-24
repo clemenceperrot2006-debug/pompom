@@ -100,7 +100,7 @@ section.visible {
 .decor img {
   width: 100%;
   height: 100%;
-  object-fit: cover;             /* 🔥 L’image touche haut + bas */
+  object-fit: fill;             /* 🔥 L’image touche haut + bas */
   object-position: center;       /* centrée proprement */
 }
 /* --------------------------------------------------------- */
