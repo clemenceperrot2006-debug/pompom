@@ -131,7 +131,7 @@ section.visible {
 .card img {
   width: auto;
   height: 250px;
-  object-fit: contain;
+  object-fit: fill;
   border-radius: 8px;
   background-color: #f3f6ff;
 }
