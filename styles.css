@@ -1,205 +1,40 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+/* Logo dans le hero */
+.hero-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80px;         /* taille du logo */
+  height: 80px;
+  border-radius: 50%;   /* cercle parfait */
+  overflow: hidden;     /* masque le reste de l'image carrée */
+  z-index: 3;
 }
 
-body {
-  background: #ffffff;
-  color: #002b80;
-  scroll-behavior: smooth;
-}
-
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background: #002b80;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #99c2ff;
-}
-
-/* Hero */
-#hero {
-  background: linear-gradient(rgba(0,43,128,0.7), rgba(0,43,128,0.7)),
-              url("img/hero.jpg") center/cover;
-  text-align: center;
-  color: white;
-  padding: 150px 20px;
-  position: relative;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
-
-#hero h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
-.btn {
-  background: white;
-  color: #002b80;
-  padding: 10px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.3s ease, background 0.3s ease;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.btn:hover {
-  background: #99c2ff;
-  transform: scale(1.05);
-}
-
-/* Sections */
-section {
-  padding: 80px 10%;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.6s ease-out;
-}
-
-section.visible {
-  opacity: 1;
-}
-
-/* BANDES PHOTOS EN COVER */
-.decor {
-  width: 100%;
-  height: auto;
-}
-
-.decor img {
+.hero-logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  object-fit: cover;   /* remplit le cercle sans déformation */
 }
 
-/* Galeries */
-.gallery {
+/* Activités en nuages */
+.activity-clouds {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-.gallery.large img {
-  width: auto;
-  height: 300px;
-  object-fit: contain; 
-  background-color: #f3f6ff;
-  border-radius: 10px;
-}
-
-/* Cartes coachs */
-.card {
-  background: #f3f6ff;
-  padding: 20px;
-  border-radius: 10px;
-  width: 260px;
+.cloud {
+  background-color: #99c2ff;
+  color: #002b80;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
 
-.card img {
-  width: auto;
-  height: 250px;
-  object-fit: fill;
-  border-radius: 8px;
-  background-color: #f3f6ff;
-}
-
-.card:hover {
+.cloud:hover {
   transform: scale(1.05);
-}
-
-/* Compétitions */
-.compet-list {
-  list-style: none;
-  font-size: 1.1em;
-  line-height: 1.8;
-}
-
-/* NOUVELLE SECTION : ESPRIT D'ÉQUIPE */
-#team-activities {
-  padding: 80px 10%;
-  text-align: center;
-  background-color: #f3f6ff;
-  opacity: 0;
-  transition: opacity 0.6s ease-out;
-}
-
-#team-activities.visible {
-  opacity: 1;
-}
-
-#team-activities h2 {
-  margin-bottom: 20px;
-  font-size: 2.5em;
-}
-
-#team-activities p {
-  margin-bottom: 40px;
-  font-size: 1.1em;
-}
-
-.activity-clouds {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.activity-clouds .cloud {
-  background-color: white;
-  padding: 15px 25px;
-  border-radius: 50px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  font-weight: 500;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.activity-clouds .cloud.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.activity-clouds .cloud:hover {
-  transform: translateY(-5px);
-}
-
-/* Footer */
-footer {
-  background: #002b80;
-  color: white;
-  text-align: center;
-  padding: 20px;
 }
